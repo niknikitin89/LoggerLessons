@@ -17,9 +17,10 @@ public class Main {
         logger.debug("Debug message");
         logger.trace("Trace message");
 
-        FileLogging.someVoid();
-        ConsoleLogging.someVoid();
-        MyLogging.someVoid();
+//        FileLogging.someVoid();
+//        ConsoleLogging.someVoid();
+//        MyLogging.someVoid();
+
     }
 }
 
