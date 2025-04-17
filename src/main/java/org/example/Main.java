@@ -17,9 +17,15 @@ public class Main {
         logger.debug("Debug message");
         logger.trace("Trace message");
 
-//        FileLogging.someVoid();
-//        ConsoleLogging.someVoid();
-//        MyLogging.someVoid();
+        try {
+            throw new IllegalStateException("message");
+        }catch (IllegalStateException e) {
+            logger.error("IllegalStateException",e);
+        }
+
+        FileLogging.someVoid();
+        ConsoleLogging.someVoid();
+        MyLogging.someVoid();
 
     }
 }
